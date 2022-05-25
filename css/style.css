@@ -48,3 +48,27 @@ input {
 .search-clear {
   cursor: pointer;
 }
+
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+.video {
+  grid-area: 1/1;
+  max-width: 500px;
+  display: block;
+}
+
+.full-area {
+  grid-area: 1/1;
+}
+
+.search-hint {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show-hint .search-hint {
+  opacity: 1;
+}
